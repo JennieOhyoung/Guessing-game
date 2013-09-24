@@ -18,10 +18,12 @@ number_of_tries = 0
 
 
 while (guessing):
-
-    if guess != int
+    guess = raw_input("What's your guess? ")
+    if type(guess) != int:
+    
         print "That's not a number! Guess again!"
-    else: 
+    else:
+        int(guess)
         if guess < 1 or guess > 100:
             print "That number is not in range, guess again!"
 
